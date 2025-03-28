@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondoimagen{
+    background-image: url(../assets/img/fotoavionfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.encabezado{
+    display: flex;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    align-items: center;
+    gap: 8rem;
+}
+
+h1{
+    font-size: 4rem;
+    width: 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logotipo{
+    margin-left: 5rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+
+.barra{
+    background-color: #6BDEE3;
+    padding: 1rem;
+    border-top: 1px solid black;
+}
+
+.barra .enlace{
+    display: inline-block;
+    margin-left: 8rem;
+}
+.barra :hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+.barra .active{
+    color: white;
+    font-weight: bold;
+}
+
+.enlace{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+}
+
+.main-index{
+    display: grid;
+    grid-template-columns: 2 (auto);
+    grid-template-rows: 2 (auto);
+    margin: 15px 15px;
+    grid-gap: 35px;
+    background-color: #BBE6CB;
+    grid-template-areas: "box1 box2" "box3 box4";
+    border: 3px solid black;
+}
+.caja1{
+    grid-area: box1;
+}
+.caja2{
+    grid-area: box2;
+}
+.caja3{
+    grid-area: box3;
+}
+.caja4{
+    grid-area: box4;
+}
+.caja1, .caja2, .caja3, .caja4, .footer{
+    margin: 10px 10px;
+    text-align: justify; 
+    margin: 2px 2px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: #6BDEE3;
+    height: 200px;
+    padding: 0.5rem 0.5rem;
+}
+
+.footer{
+    font-size: 1rem;
+}
+
+.redsocial{
+    width: 50px;
+    height: 50px;
+    padding-left: 1rem;
+}
+
+/* PRODUCTOS */ 
+.main-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3(1fr);
+    grid-template-areas: "box1 box2" "box3 box4" "box5 box6";
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.bloque1{
+    grid-area: box1;
+}
+.bloque2{
+    grid-area: box2;
+}
+.bloque3{
+    grid-area: box3;
+}
+.bloque4{
+    grid-area: box4;
+}
+.bloque5{
+    grid-area: box5;
+}
+.bloque6{
+    grid-area: box6;
+}
+
+.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6{
+    margin-bottom: 1.5rem;
+    border: 1px solid black;
+}
+
+.imagen-pais{
+    width: 100%;
+    height: auto;
+}
+
+.eslogan{
+    font-size: 30px;
+    margin-left: 1.5rem;
+}
+
+.boton{
+    display: inline-block;
+    margin-left: 18rem;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    background-color: #6BE3C0;
+    color: black;
+    text-decoration: none;
+    border: 2.5px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+button{
+    margin-left: 18rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    color: black;
+    background-color: #6BE3C0;
+    border: 2.5px solid;
+    border-radius: 5px;
+    font-size: 35px;
+    padding: 0.8rem 0.8rem
+}
+
+/*PRESUPUESTOS */
+.main-presupuestos{
+    border: 2px solid black;
+    margin: 2rem 2rem;
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.6);
+    background-color: #DCE6E9;
+}
+
+.formulario{
+    padding-left: 5rem;
+}
+
+.label-formulario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 2rem;
+}
+
+input:not(.checkbox), textarea{
+    width: 30rem;
+    height: 1.5rem;
+    padding: 1rem;
+}
+
+label{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    width: 300px;
+    text-align: left;
+}
+
+/*CONTACTO*/
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+p{
+    font-size: 2.5rem;
+    margin: 1rem 1.5rem;
+}
+
+.mapa{
+    margin-left: 15rem;
+}

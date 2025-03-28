@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="fondoimagen">
+            <div class="encabezado">
+                <a href="../index.html">
+                    <img class="logotipo" src="../assets/img/logo.jpg" alt="logoempresa" height="980" width="980">
+                </a>
+               <h1> AGENCIA TROTAMUNDOS </h1>
+            </div>
+        </div>
+        <nav class="barra">
+                <a class="enlace" href="../views/productos.html"> Productos</a>
+                <a class="enlace active" href="../presupuestos.html">Presupuestos</a>
+                <a class="enlace" href="../views/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="main-presupuestos">
+        <form action="#" method="post">
+            <div class="formulario">
+                <div class="label-formulario">
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,}"  required>         
+                </div>
+                <div class="label-formulario">
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>         
+                </div>
+                <div class="label-formulario">
+                    <label for="telefono"> Teléfono: </label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu telefono" pattern="^\+?[0-9]{7,15}$" required>         
+                </div>
+                <div class="label-formulario">
+                    <label for="sugerencias"> Cuéntenos qué necesita: </label>
+                    <textarea id="sugerencias" name="sugerencias" placeholder="Escriba aquí"
+                    minlength="10" maxlength="500"></textarea>
+                </div>
+                <div class="label-formulario">
+                    <label class="checkbox"> Acepto la política y privacidad: </label>
+                    <input class="checkbox" type="checkbox" required>          
+                </div>
+                <button type="submit"> Enviar datos </button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer"> Para más información síguenos en nuestras redes sociales: </p>
+        <a href="#" > <img class="redsocial" src="../assets/img/instagram.jpg" alt="instagram" height="360" width="360"></a>
+        <a href="#"> <img class="redsocial" src="../assets/img/x.jpg" alt="x" height="500" width="500"></a>
+        <a href="#"> <img class="redsocial" src="../assets/img/facebook.jpg" alt="facebook" height="500" width="500"></a>
+        <p class="footer"> También nos puedes encontrar en Calle Zamora, num 7, Asturias</p>
+        <p class="footer"> Aviso legal</p>
+    </footer>
+</body>
+</html>
